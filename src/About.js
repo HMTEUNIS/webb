@@ -1,8 +1,6 @@
 import React, { Suspense, useState } from "react";
-import { Canvas } from "@react-three/fiber";
 import {Link} from 'react-router-dom'
 import gsap from 'gsap';
-import Ball from './Ball';
 
 function About ()  {
     const [pos, setPos] = useState ([1.25, 50, 500])
@@ -16,13 +14,7 @@ function About ()  {
   return <>
   
   <div className="leftSide"><div className="aboutglow" onMouseEnter={onEnter} onMouseLeave={onLeave}>
-  <Link to="/"><div className="smallball" > <Canvas>
-<Suspense fallback={null}>
-<directionalLight position={[3, 2, 2]} color="rgba(222, 236, 26, 0.705)" />
-  <Ball position={[9, 2, 2]} pos={pos}/> 
-</Suspense>
-</Canvas> 
-</div></ Link></div>
+ </div>
 <img className="leftPicture" src=".\yDfqsAlw.jpeg" /> <br />
 <p className="leftBarText">Inspired Tenacity & Creative Solutions</p>
 
