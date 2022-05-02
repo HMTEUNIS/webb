@@ -42,11 +42,11 @@ function LinkedInBox({hovered, setHovered}) {
     })
     return (
 
-        <mesh ref={mesh}  onClick={goLink} onPointerOver={() => setHovered(true)}
+        <mesh ref={mesh}  onClick={goLink}  onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)} >
         <boxBufferGeometry attach="geometry" />
        
-        <meshStandardMaterial map={texture} attach="material" />
+        <meshStandardMaterial map={texture} attach="material"  />
       </mesh>
     )
   }
@@ -68,7 +68,7 @@ function LinkedInBox({hovered, setHovered}) {
       onPointerOut={() => setHovered(false)}  >
         <boxBufferGeometry attach="geometry" />
        
-        <meshStandardMaterial map={texture} attach="material" />
+        <meshStandardMaterial map={texture} attach="material" color="aqua" />
       </mesh>
     )
   }

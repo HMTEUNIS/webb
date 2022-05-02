@@ -1,23 +1,21 @@
-import './App.css';
-import React, { useState, useEffect, useRef } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import Model from './Model'
+import { OrbitControls } from '@react-three/drei'
 
 
-
-
-function Home() {
-
-
-
-
-
-
-
-
+export default function Home() {
+  
   return (
+    <div className="head">
+      <Canvas>
+        <Suspense fallback={null}>
+        <Model />
+        <OrbitControls makeDefault minPolarAngle={0} maxPolarAngle={Math.PI / .5} />
+        <ambientLight intensity={2.5} />
 
-    <>
-    <div className="container-page"></div>
-    </>
+        </Suspense>
+      </Canvas>
+    </div>
   );
 }
-export default Home

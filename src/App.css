@@ -17,14 +17,16 @@
 
 
 .name{
-  font-size: 7vw;
+  font-size: 5vw;
   color: rgba(231, 227, 13, 0.726);;
   text-shadow: 2px 1px rgba(231, 227, 13, 0.247);
-  width: 50%;
+  width: fit-content;
   position: absolute;
   bottom: 6vh;
 z-index: 1;
 border: 1px solid rgba(255, 255, 255, 0);
+text-decoration: none;
+
 }
 .contact-link{
   cursor: pointer;
@@ -38,6 +40,8 @@ height: 90vh;
 width: 100%;
 top: 5vh;
 text-decoration: none;
+color:black;
+
 
 }
 
@@ -47,7 +51,8 @@ text-decoration: none;
   cursor: pointer;
   text-decoration: none;
   color:black;
-  font-size: 6vh
+  font-size: 6vh;
+  width: inherit;
 }
 .foot{
   font-size:3vw;
@@ -92,7 +97,6 @@ text-decoration: none;
 .navbar{
   position: absolute;
   z-index: 2;
-  height:  fit-content;
   top: 2vh;
   left: 2%;
   padding: .25vh;
@@ -102,7 +106,6 @@ text-decoration: none;
   text-decoration: none;
 color:black;  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
 
 
 }
@@ -121,7 +124,12 @@ margin: auto;
   margin: auto;
 
 }
-
+.head{
+  overflow: auto;
+  position: relative;
+  left: -3%;
+  height: 100%;
+}
 .projectCard{
   position: relative;
   background-color: rgba(255, 255, 255, 0.377);
@@ -135,6 +143,7 @@ float: left;
 padding: 5vh;
 text-align: center;
 align-content: center;
+
 
 }
 
@@ -152,8 +161,9 @@ font-size: 6vh}
 
 .projectDrop{
   font-size: 1.8vh;
-  height: 65vh;
+  height: 68vh;
   width: 85vw;
+  top: 5%;
   align-items: center;
   text-align: center;
   background-color: white;
@@ -163,7 +173,10 @@ font-size: 6vh}
 .gitIcon{
   height: 4vh;
   padding: .5vh;
+  cursor: pointer;
 }
 .video{
   position: relative;
-left: 5%}
+  overflow: auto;
+  height: 60%;
+left: 20%}
